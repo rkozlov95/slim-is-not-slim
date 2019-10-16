@@ -1,0 +1,10 @@
+<form action="/intervals" method="post">
+  <div class="form-group col-2 mx-auto">
+    <label class="h5" for="intervals">Введите интервал</label>
+    <input type="text" class="form-control" name="intervals[content]" id="intervals" value="<?= htmlspecialchars($intervals['content'] ?? '') ?>">
+  </div>
+  <?php if ($error !== ''): ?>
+    <p class="text-center"><?= $error ?></p>
+  <?php endif ?>
+  <button type="submit" class="btn btn-primary mx-auto d-block">Добавить интервал</button>
+</form>

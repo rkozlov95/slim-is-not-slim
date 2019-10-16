@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row justify-content-center pb-3">
+    <div class="d-flex">
+      <a class="btn btn-primary mr-1" href="/">На главную</a>
+      <a class="btn btn-primary" href="/intervals/new" role="button">Добавить еще один интервал</a>
+    </div>
+  </div>
+</div>
+<?php foreach ($intervals as $value): ?>
+  <div class="h5 d-flex flex-row justify-content-center border">
+    <?= $value['content'] ?>
+  </div>
+<?php endforeach ?>
